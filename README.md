@@ -4,7 +4,7 @@
     <div class="subtitle">内附可口示例 🌰</div>
     <div class="actions">
       <a class="action-btn" href="/#/docs/getting-started">起步</a>
-      <a class="action-btn" href="/#/docs/cookbook">Cookbook</a>
+      <a class="action-btn" href="/#/docs/makefile-cookbook">Cookbook</a>
     </div>
   </div>
   <img src="/assets/images/pie_ingredients.png" alt="Pie Ingredients">
