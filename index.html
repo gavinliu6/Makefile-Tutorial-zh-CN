@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Makefile 教程</title>
+    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css" />
+    <link rel="stylesheet" href="/assets/styles/docs.css" />
+  </head>
+  <body>
+    <div id="docute"></div>
+    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+    <script src="https://unpkg.com/docute-google-analytics@1/dist/index.min.js"></script>
+    <script>
+      new Docute({
+        target: '#docute',
+        plugins: [
+          window.location.hostname !== 'localhost' &&
+            docuteGoogleAnalytics('G-P20G6GK91G'),
+        ].filter(Boolean),
+        highlight: ['makefile', 'bash'],
+        cssVariables: {
+          sidebarWidth: '220px',
+        },
+        nav: [
+          {
+            title: '原作仓库',
+            link: 'https://github.com/theicfire/makefiletutorial',
+          },
+          {
+            title: '作者推特',
+            link: 'https://twitter.com/chaselambda',
+          },
+        ],
+        sidebar: [
+          {
+            title: '起步',
+            link: '/docs/getting-started',
+          },
+          {
+            title: '目标',
+            link: '/docs/targets',
+          },
+          {
+            title: '自动变量和通配符',
+            link: '/docs/automatic-variables-and-wildcards',
+          },
+          {
+            title: '各种规则',
+            link: '/docs/fancy-rules',
+          },
+          {
+            title: '命令和执行',
+            link: '/docs/commands-and-execution',
+          },
+          {
+            title: '变量 第 2 部分',
+            link: '/docs/variables-pt-2',
+          },
+          {
+            title: 'Makefiles 的条件判断',
+            link: '/docs/conditional-part-of-makefiles',
+          },
+          {
+            title: '函数',
+            link: '/docs/functions',
+          },
+          {
+            title: '其他特性',
+            link: '/docs/other-features',
+          },
+          {
+            title: 'Makefile Cookbook',
+            link: '/docs/makefile-cookbook',
+          },
+        ],
+        footer: `
+  <div style="border-top:1px solid var(--border-color);padding-top:30px;margin: 40px 0;color:#999999;font-size: .9rem;">
+  &copy; ${new Date().getFullYear()} Translated by <a href="https://gavinliu.me" target="_blank">Gavin Liu</a>.
+  💕 The site is built by <a href="https://docute.org/" target="_blank">Docute</a>.
+  </div>
+  `,
+      })
+    </script>
+  </body>
+</html>
