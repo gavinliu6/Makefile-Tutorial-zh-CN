@@ -20,7 +20,7 @@ clean:
 
 <Note type="tip" label="译者注">
 
-关于目标 `all` 的更过信息可参阅 [Stack Overflow - What does “all” stand for in a makefile?](https://stackoverflow.com/questions/2514903/what-does-all-stand-for-in-a-makefile)
+关于目标 `all` 的更多信息可参阅 [Stack Overflow - What does “all” stand for in a makefile?](https://stackoverflow.com/questions/2514903/what-does-all-stand-for-in-a-makefile)
 
 </Note>
 
