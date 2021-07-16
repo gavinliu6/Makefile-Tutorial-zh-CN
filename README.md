@@ -18,7 +18,6 @@
 
 <Note type="tip">
 
-与官方仓库的提交 [f03f86e
-](https://github.com/theicfire/makefiletutorial/commit/f03f86e091b20425a24891381f1c905f7e445fb9) 保持了同步
+与官方仓库的提交 [580e106](https://github.com/theicfire/makefiletutorial/commit/580e106e0de92543cd85d6ce5e14dd716039ec7e) 保持了同步
 
 </Note>
