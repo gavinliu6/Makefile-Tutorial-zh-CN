@@ -1,4 +1,4 @@
-# 变量 第 2 部分
+# 变量（第 2 部分）
 
 ## 变量类型和修改
 
@@ -79,7 +79,7 @@ all:
 
 ## 命令行参数与覆盖
 
-你可以通过 `override` 来覆盖来自命令行的变量。假使我们使用下面的 makefile 执行了这样一条命令 `make option_one=hi`。
+你可以通过 `override` 来覆盖来自命令行的变量。假使我们使用下面的 makefile 执行了这样一条命令 `make option_one=hi`，那么变量 `option_one` 的值就会被覆盖掉。
 
 ```makefile
 # Overrides command line arguments
@@ -93,7 +93,7 @@ all:
 
 ## 命令列表与 `define`
 
-`define` 实际上就是一个命令列表。它与函数 `define` 没有任何关系。注意这里，它与用分号分隔多个命令的场景有点不同，因为前者如预期的那样，每条命令都是在一个单独的 shell 中运行的。
+`define` 实际上就是一个命令列表，它与函数 `define` 没有任何关系。这里请注意，它与用分号分隔多个命令的场景有点不同，因为前者如预期的那样，每条命令都是在一个单独的 shell 中运行的。
 
 ```makefile
 one = export blah="I was set!"; echo $$blah

@@ -14,7 +14,7 @@ all:
 
 ## 命令的执行
 
-每个命令都运行在一个新的 shell 中（或者说运行效果是等同于运行在一个新 shell 中）。
+每个命令都运行在一个新的 shell 中（或者说运行效果等同于运行在一个新 shell 中）。
 
 ```makefile
 all: 
@@ -62,7 +62,7 @@ one:
 
 ## `make` 的递归用法
 
-为了递归应用一个 makefile，请使用 `$(MAKE)` 而不是 `make`，因为它会为你传递构建标志而使用了 `$(MAKE)` 变量的该行命令不会应用这些标志。
+为了递归应用一个 makefile，请使用 `$(MAKE)` 而不是 `make`，因为它会为你传递构建标志，而使用了 `$(MAKE)` 变量的这一行命令不会应用这些标志。
 
 ```makefile
 new_contents = "hello:\n\ttouch inside_file"
@@ -79,7 +79,7 @@ clean:
 
 指令 `export` 携带了一个变量，并且对子 `make` 命令可见。在下面的例子中，变量 `cooly` 被导出以便在子目录中的 makefile 可以使用它。
 
-<Note>`export` 的语法与 `sh` 相同，但二者并不相关（虽然功能类似）。</Note>
+<Note>`export` 的语法与 sh 相同，但二者并不相关（虽然功能类似）。</Note>
 
 ```makefile
 new_contents = "hello:\n\\techo \$$(cooly)"
