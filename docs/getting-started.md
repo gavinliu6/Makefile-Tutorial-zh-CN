@@ -6,7 +6,7 @@ Makefiles 用于帮助决定一个大型程序的哪些部分需要重新编译�
 
 这里有一个你可能会使用 Make 进行构建的依赖关系示例图。如有任何文件的依赖项发生了改变，那么该文件就会被重新编译。
 
-<ImageZoom src="../assets/images/dependency_graph.png" :border="false" />
+<ImageZoom src="./assets/images/dependency_graph.png" :border="false" />
 
 ## Make 的替代品
 
