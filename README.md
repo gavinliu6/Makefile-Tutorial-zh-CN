@@ -7,7 +7,7 @@
       <a class="action-btn" href="/#/docs/makefile-cookbook">Cookbook</a>
     </div>
   </div>
-  <img src="/assets/images/pie_ingredients.png" alt="Pie Ingredients">
+  <img src="./assets/images/pie_ingredients.png" alt="Pie Ingredients">
 </div>
 
 **我之所以编写这份指南，是因为我一直以来都不能完全理解 Makefiles 文件的内容。** 它们似乎充斥着各种隐藏规则和晦涩难懂的符号，还有就是简单的问题复杂化。为此，我静坐数周，尽我所能地阅读了所有关于 Makefiles 的资料，把最关键的知识点都浓缩在了该指南里。每个主题都对应了一段简述和一个你可以用来自己运行的自包含示例。
