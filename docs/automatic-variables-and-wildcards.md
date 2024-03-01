@@ -5,9 +5,9 @@
 在 Make 中，`%` 和 `*` 都叫作通配符，但是它们是两个完全不同的东西。`*` 会搜索你的文件系统来匹配文件名。我建议你应该一直使用 `wildcard` 函数来包裹它，要不然你可能会掉入下述的常见陷阱中。真是搞不明白，不用 `wildcard` 包裹的 `*` 除了能给人徒增迷惑，还有什么可取之处。
 
 ```makefile
-# Print out file information about every .c file
+# 打印出每个.c文件的文件信息
 print: $(wildcard *.c)
-    ls -la  $?
+	ls -la  $?
 ```
 
 `*` 可以用在 `targets`、`prerequisites` 以及 `wildcard` 函数中。
@@ -17,21 +17,21 @@ print: $(wildcard *.c)
 <Note type="danger">当 `*` 匹配不到文件时，它将保持原样（除非被 `wildcard` 函数包裹）。</Note>
 
 ```makefile
-thing_wrong := *.o # Don't do this! '*' will not get expanded
+thing_wrong := *.o # 请不要这样做！'*.o' 将不会被替换为实际的文件名
 thing_right := $(wildcard *.o)
 
 all: one two three four
 
-# Fails, because $(thing_wrong) is the string "*.o"
+# 失败，因为$(thing_wrong)是字符串"*.o"
 one: $(thing_wrong)
 
-# Stays as *.o if there are no files that match this pattern :(
+# 如果没有符合这个匹配规则的文件，它将保持为 *.o   :(
 two: *.o 
 
-# Works as you would expect! In this case, it does nothing.
+# 按预期运行！在这种情况下，什么都不会执行
 three: $(thing_right)
 
-# Same as rule three
+# 与规则三相同
 four: $(wildcard *.o)
 ```
 
@@ -56,23 +56,23 @@ four: $(wildcard *.o)
 
 ```makefile
 hey: one two
-    # Outputs "hey", since this is the first target
-    echo $@
+	# 输出"hey"，因为这是第一个目标
+	echo $@
 
-    # Outputs all prerequisites newer than the target
-    echo $?
+	# 输出所有比目标新的依赖
+	echo $?
 
-    # Outputs all prerequisites
-    echo $^
+	# 输出所有依赖
+	echo $^
 
-    touch hey
+	touch hey
 
 one:
-    touch one
+	touch one
 
 two:
-    touch two
+	touch two
 
 clean:
-    rm -f hey one two
+	rm -f hey one two
 ```
